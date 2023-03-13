@@ -31,8 +31,9 @@ function fetchWeather(location) {
     var lat = 51.509865;
     var lon = -0.118092;
   //   var city = London;
-    var apiUrl = `${weatherApiRootUrl}/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
-  
+  //var apiUrl = `${weatherApiRootUrl}/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+    var apiUrl = `$http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid={3f75236b7925362e7c2aa1e412e899f6}`;
+    
     fetch(apiUrl)
       .then(function (res) {
         return res.json();
