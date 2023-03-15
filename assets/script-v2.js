@@ -39,7 +39,7 @@ function fetchWeather(location) {
  })
  .then(function (data) {
  console.log(data);
- 
+ document.getElementById('today').innerHTML = '';
  var weather = data.weather[0].description || data.weather[0].main;
  var tempF = data.main.temp;
  var windMph = data.wind.speed;
@@ -89,6 +89,7 @@ function fetchWeather(location) {
  })
  .then(function (data) {
  console.log(data);
+ document.getElementById('forecast').innerHTML = '';
  var sectionEl = document.createElement("div")
  sectionEl.setAttribute("class", "section-element2")
  for(let i =0;i<data.list.length;i=i+8){
@@ -110,7 +111,7 @@ function fetchWeather(location) {
  // heading.textContent = location 
  // heading.textContent = moment().add(10, 'days').calendar()
  // heading.textContent = `${location } (${moment().add(10, 'days').calendar()})`
- //heading.innerHTML = `${location } (${moment().add(10, 'days').calendar()})`
+ // heading.innerHTML = `${location } (${moment().add(10, 'days').calendar()})`
  tempEl.textContent = "Temp: " + tempF;
  windEl.textContent = "Wind Speed: " +windMph;
  humidityEl.textContent = "Humidity: "+humidity;
