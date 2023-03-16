@@ -91,6 +91,15 @@ heading.innerHTML = `${location} (${formattedDate})`
  document.getElementById('forecast').innerHTML = '';
  var sectionEl = document.createElement("div")
  sectionEl.setAttribute("class", "section-element2")
+ 
+ var fiveDayHeader = document.createElement("h2");
+ fiveDayHeader.textContent = "5-Day Forecast: ";
+ sectionEl.appendChild(fiveDayHeader);
+// var fiveDayHeader = document.getElementById("forecast");
+// fiveDayHeader.textContent = "5-Day Forecast: ";
+// sectionEl.appendChild("h2");
+// var fiveDayHeader =  document.getElementById("forecast").appendChild("h2");
+// fiveDayHeader.textContent = "5-Day Forecast: ";
  for(let i =0;i<data.list.length;i=i+8){
  var weather = data.list[i].weather[0].description || data.list[i].weather[0].main;
  var tempF = data.list[i].main.temp;
