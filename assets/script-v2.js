@@ -59,7 +59,9 @@ function fetchWeather(location) {
  weatherIcon.setAttribute('src', iconUrl);
  weatherIcon.setAttribute('alt', iconDescription);
  weatherIcon.setAttribute('class', 'weather-img');
- heading.innerHTML = `${location} (${moment().add(10, 'days').calendar()})`
+// heading.innerHTML = `${location} (${moment().add(10, 'days').calendar()})`
+formattedDate = moment().format('DD/MM/YYYY');
+heading.innerHTML = `${location} (${formattedDate})`
  cardBody.append(heading)
  cardBody.append(tempEl)
  cardBody.append(weatherIcon)
@@ -108,7 +110,9 @@ function fetchWeather(location) {
  var tempEl = document.createElement('p');
  var windEl = document.createElement('p');
  var humidityEl = document.createElement('p'); // similar item to reference
- // heading.textContent = location 
+//  heading.textContent = location 
+fiveDays = moment().format('dddd');
+heading.innerHTML = `${location} (${fiveDays})`
  // heading.textContent = moment().add(10, 'days').calendar()
  // heading.textContent = `${location } (${moment().add(10, 'days').calendar()})`
  // heading.innerHTML = `${location } (${moment().add(10, 'days').calendar()})`
