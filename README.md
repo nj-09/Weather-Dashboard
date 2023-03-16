@@ -6,7 +6,7 @@ In this project, I used a combination of JavaScript, CSS and HTML in the order o
 
 Some of the issues I faced were to do with Bootstrap interfering with CSS values so I had to change the starter code elements and experiment with various versions  (please refer to evolution of code in the *previous versions* folder). I also had to revisit JS syntax and spend a bit of time covering fundamentals.
 
-Link to deployed application: 
+Link to deployed application: https://nj-09.github.io/Weather-Dashboard/
  
 
 # Screenshots of application
