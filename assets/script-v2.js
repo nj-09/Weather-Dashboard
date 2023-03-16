@@ -1,16 +1,15 @@
 // Global variables
-var searchInput = document.querySelector("#search-input")
-var searchButton = document.querySelector("#search-button")
-var historyDiv = document.querySelector("#history") // we already have a variable, so we can append here
-var historyButton = document.querySelector("#history-button")
-var apiKey = "3f75236b7925362e7c2aa1e412e899f6"
+var searchBtn = document.querySelector("#search-button");
+var historyDiv = document.querySelector("#history"); // we already have a variable, so we can append here
+var apiKey = "3f75236b7925362e7c2aa1e412e899f6";
 var weatherApiRootUrl = 'https://api.openweathermap.org';
+
 
 // API Key from openweather app
 // 3f75236b7925362e7c2aa1e412e899f6 
 
 // ----- Psuedocode ----- //
-// 1. make a function that is connected to a eventlistener that when the search is made it activates the fetch call.
+//1. make a function that is connected to a eventlistener that when the search is made it activates the fetch call.
 //2. hard code all the variables for the api
 //3. console.log the data that you receive from the fetch call
 //4. then console.log the data inside the fetch call to get the temp, wind speed, date.....etc.
@@ -76,8 +75,6 @@ heading.innerHTML = `${location} (${formattedDate})`
  });
  }
  
- // we can do the CSS styling
-
  function fetch5dayWeather(location) {
  var lat = 51.509865;
  var lon = -0.118092;
@@ -114,7 +111,8 @@ heading.innerHTML = `${location} (${formattedDate})`
 // fiveDays = moment().format('dddd');
 // heading.innerHTML = `${fiveDays}`
 fiveDays = moment().add(i + 1, 'days').format('dddd');
-heading.innerHTML = `${location} (${fiveDays})`;
+heading.innerHTML = `${fiveDays}`;
+// heading.innerHTML = `${location} (${fiveDays})`;
  // heading.textContent = moment().add(10, 'days').calendar()
  // heading.textContent = `${location } (${moment().add(10, 'days').calendar()})`
  // heading.innerHTML = `${location } (${moment().add(10, 'days').calendar()})`
@@ -142,7 +140,7 @@ heading.innerHTML = `${location} (${fiveDays})`;
  }
 
 
-searchButton.addEventListener("click",function(event){
+searchBtn.addEventListener("click",function(event){
  event.preventDefault()
  var location = searchInput.value
  fetchWeather(location)
@@ -150,7 +148,7 @@ searchButton.addEventListener("click",function(event){
 
  // Pull previously saved cities OR if no saved cities create empty array
 
- // you'll need to add in a contingency for when you have saved something. Otherwise if you just start it as an amty array, you'll always overwrite it and have an empty array. For example:
+ // a contingency for when you have saved something. Otherwise if you just start it as an empty array, you'll always overwrite it and have an empty array. For example:
 
  //var searchHistory = []; // it will always be empty if you do it this way, but if you've already search for a city, you want to check local storage and pull that in, so the alternative is:
  var searchHistory = JSON.parse(localStorage.getItem('cities')) || []
@@ -206,7 +204,3 @@ buttonEl.textContent = storedButtons[i] // ?
 
 // To call the function on page load
 populateButtons ()
-
-
-
-// how would i display the location?
