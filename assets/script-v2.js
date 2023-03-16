@@ -52,9 +52,9 @@ function fetchWeather(location) {
  var tempEl = document.createElement('p');
  var windEl = document.createElement('p');
  var humidityEl = document.createElement('p');
- tempEl.textContent = "Temp: " + tempF;
- windEl.textContent = "Wind Speed: "+windMph;
- humidityEl.textContent = "Humidity: "+humidity;
+ tempEl.textContent = "Temp: " + tempF + " °C";
+ windEl.textContent = "Wind Speed: "+windMph + " KPH";
+ humidityEl.textContent = "Humidity: "+humidity + " %";
  weatherIcon.setAttribute('src', iconUrl);
  weatherIcon.setAttribute('alt', iconDescription);
  weatherIcon.setAttribute('class', 'weather-img');
