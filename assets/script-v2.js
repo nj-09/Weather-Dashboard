@@ -1,6 +1,7 @@
 // Global variables
-var searchBtn = document.querySelector("#search-button");
-var historyDiv = document.querySelector("#history"); // we already have a variable, so we can append here
+var searchLoad = document.querySelector("#search-input"); 
+var searchBtn = document.querySelector("#search-button"); 
+var historyDiv = document.querySelector("#history") // we already have a variable, so we can append here
 var apiKey = "3f75236b7925362e7c2aa1e412e899f6";
 var weatherApiRootUrl = 'https://api.openweathermap.org';
 
@@ -9,7 +10,7 @@ var weatherApiRootUrl = 'https://api.openweathermap.org';
 // 3f75236b7925362e7c2aa1e412e899f6 
 
 // ----- Psuedocode ----- //
-//1. make a function that is connected to a eventlistener that when the search is made it activates the fetch call.
+// 1. make a function that is connected to a eventlistener that when the search is made it activates the fetch call.
 //2. hard code all the variables for the api
 //3. console.log the data that you receive from the fetch call
 //4. then console.log the data inside the fetch call to get the temp, wind speed, date.....etc.
@@ -23,7 +24,6 @@ var weatherApiRootUrl = 'https://api.openweathermap.org';
 //4. append those elements to the corresponding div on the html
 
 //-------------------------------
-
 
 function fetchWeather(location) {
  var lat = 51.509865;
@@ -142,7 +142,7 @@ heading.innerHTML = `${fiveDays}`;
 
 searchBtn.addEventListener("click",function(event){
  event.preventDefault()
- var location = searchInput.value
+ var location = searchLoad.value
  fetchWeather(location)
  fetch5dayWeather(location)
 
