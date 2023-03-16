@@ -27,7 +27,7 @@ Final version of workflow:
 ![image](https://user-images.githubusercontent.com/119903128/225506591-21246553-1cae-40cd-b054-64cdc78af708.png)
 
 
-Previous versions screenshot:
+*Previous versions* folder screenshot:
 ![image](https://user-images.githubusercontent.com/119903128/225506818-29a1fd25-e414-4098-95f1-3e1bfcd66e64.png)
 
 
