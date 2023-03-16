@@ -116,9 +116,9 @@ heading.innerHTML = `${fiveDays}`;
  // heading.textContent = moment().add(10, 'days').calendar()
  // heading.textContent = `${location } (${moment().add(10, 'days').calendar()})`
  // heading.innerHTML = `${location } (${moment().add(10, 'days').calendar()})`
- tempEl.textContent = "Temp: " + tempF;
- windEl.textContent = "Wind Speed: " +windMph;
- humidityEl.textContent = "Humidity: "+humidity;
+ tempEl.textContent = "Temp: " + tempF + " °C";
+ windEl.textContent = "Wind Speed: " +windMph + " KPH";
+ humidityEl.textContent = "Humidity: "+humidity + " %";
  weatherIcon.setAttribute('src', iconUrl);
  weatherIcon.setAttribute('alt', iconDescription);
  weatherIcon.setAttribute('class', 'weather-img');
