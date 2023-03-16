@@ -4,14 +4,31 @@
 
 In this project, I used a combination of JavaScript, CSS and HTML in the order of most used to least used to design a weather forecast that displays the weather of a given city and their 5 day forecast. This requires OpenWeather API to generate the data needed for a city. I also used localStorage so that the user entries persist even after reloading the page.
 
+Some of the issues are faced were to do with boostrap interfering with CSS values so I had to change the starter code values and experiment with various versions  (please refer to evolution of code in the *previous versions* folder)
+
 Link to deployed application: 
  
 
-# Screenshot of application
-![image](https://user-images.githubusercontent.com/119903128/225490420-31802990-0a4e-4ab5-bdc0-52522005fb33.png)
+# Screenshots of application
+Initial view of the page:
+![image](https://user-images.githubusercontent.com/119903128/225506424-f7f1d4fc-e0ea-43b9-bdfb-ed53b1ab0ae6.png)
 
-# Screenshot of workflow
-![image](https://user-images.githubusercontent.com/119903128/224258167-d7ab41c5-6289-48ec-8153-e42493aefb2b.png)
+City input:
+![image](https://user-images.githubusercontent.com/119903128/225507115-70da1ad9-e36e-4b09-b4cb-e83caa9643cd.png)
+![image](https://user-images.githubusercontent.com/119903128/225507275-4b06e91d-8e07-432c-8a1e-42599df63ba4.png)
+![image](https://user-images.githubusercontent.com/119903128/225507347-1795e4df-4bed-434c-ad53-cf66d237ed45.png)
+
+Data persistent after reload:
+![image](https://user-images.githubusercontent.com/119903128/225507850-698be7f4-5b58-4bac-9abf-f173bc4a2714.png)
+
+# Screenshots of workflow
+
+Final version of workflow:
+![image](https://user-images.githubusercontent.com/119903128/225506591-21246553-1cae-40cd-b054-64cdc78af708.png)
+
+
+Previous versions screenshot:
+![image](https://user-images.githubusercontent.com/119903128/225506818-29a1fd25-e414-4098-95f1-3e1bfcd66e64.png)
 
 
 ## Resources used
