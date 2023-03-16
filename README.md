@@ -4,7 +4,7 @@
 
 In this project, I used a combination of JavaScript, CSS and HTML in the order of most used to least used to design a weather forecast that displays the weather of a given city and their 5 day forecast. This requires OpenWeather API to generate the data needed for a city. I also used localStorage so that the user entries persist even after reloading the page.
 
-Some of the issues are faced were to do with boostrap interfering with CSS values so I had to change the starter code values and experiment with various versions  (please refer to evolution of code in the *previous versions* folder)
+Some of the issues I faced were to do with boostrap interfering with CSS values so I had to change the starter code values and experiment with various versions  (please refer to evolution of code in the *previous versions* folder). I also had to revisit JS syntax and spend a bit of time covering fundamentals.
 
 Link to deployed application: 
  
